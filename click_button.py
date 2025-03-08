@@ -18,7 +18,7 @@ user_data_dir = f"/tmp/chrome-user-data-{uuid.uuid4()}"
 options.add_argument(f'--user-data-dir={user_data_dir}')
 
 # Set the User-Agent to mimic a mobile device (e.g., Chrome on Android)
-mobile_user_agent = "Mozilla/5.0 (Linux; Android 12; LM-G910N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36"
+mobile_user_agent = "Mozilla/5.0 (Linux; Android 13; LNA-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.0.0 Mobile Safari/537.36"
 options.add_argument(f'user-agent={mobile_user_agent}')
 
 # Set mobile emulation options
@@ -54,7 +54,7 @@ driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
 try:
     # Open the website
     driver.get('https://mycutebaby.in/contest/participant/679e77f65b140')
-    driver.add_cookie({'name': 'PHPSESSID', 'value': '6a23930a428d920eb98def44b481fc45'})
+    driver.add_cookie({'name': 'PHPSESSID', 'value': 'f2f2a1021c1cc116fc0f9e46d3978fbc'})
     time.sleep(2)
     # to refresh the page
     driver.refresh()
